@@ -42,7 +42,7 @@ export default function CreateWriter() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
           <div className="bg-white p-6 rounded-md border">
-            <h2 className="text-lg font-medium mb-4">Create Writer - شاعر کا نام</h2>
+            <h2 className="text-lg font-medium mb-4 gulzartext">Create Writer - شاعر کا نام</h2>
             <input
               type="text"
               placeholder="امام احمد رضا"
@@ -50,14 +50,14 @@ export default function CreateWriter() {
               dir="rtl"
             />
 
-            <h2 className="text-lg font-medium mb-4">Writer Year - شاعری کی صدی</h2>
+            <h2 className="text-lg font-medium mb-4 gulzartext">Writer Year - شاعری کی صدی</h2>
             <input
               type="text"
               placeholder="1890"
               className="w-full mb-6 p-2 border rounded"
             />
 
-            <h2 className="text-lg font-medium mb-4">About writer - شاعر کا تعارف</h2>
+            <h2 className="text-lg font-medium mb-4 gulzartext">About writer - شاعر کا تعارف</h2>
             <div className="border rounded-md mb-4">
               <div className="flex flex-wrap gap-1 p-2 border-b">
                 {[Bold, Italic, Underline, Strikethrough, List, ListOrdered, AlignLeft, AlignCenter, AlignRight, Link, ImageIcon, Undo, Redo].map((Icon, index) => (
@@ -68,7 +68,7 @@ export default function CreateWriter() {
               </div>
               <textarea
                 dir="rtl"
-                className="w-full p-2 min-h-[150px] text-right"
+                className="w-full p-2 min-h-[150px] text-right gulzartext"
                 placeholder="شاعر وہ شخص ہوتا ہے جو اپنے احساسات، خیالات اور مشاہدات کو خوبصورت اور مؤثر انداز میں الفاظ کی ذریعے بیان کرتا ہے۔ وہ زبان کی تخلیقی استعمال سے نظمیں، غزلیں، اور دیگر شعری اصناف تخلیق کرتا ہے۔ وہ میں وزن، قافیہ اور موسیقیت کا خیال رکھتا ہاتا ہے۔ ایک اچھا شاعر اپنی تخیل کی قوت سے دل و دماغ پر گہرا اثر چھوڑتا ہے۔"
               />
             </div>
@@ -82,18 +82,18 @@ export default function CreateWriter() {
             <table className="w-full text-sm">
               <thead className="bg-gray-100 text-left">
                 <tr>
-                  <th className="p-2 w-16">SR #</th>
-                  <th className="p-2">Create Writer - شاعر کا نام</th>
-                  <th className="p-2">Writer Year - شاعری کی صدی</th>
-                  <th className="p-2">Created On</th>
-                  <th className="p-2">Action</th>
+                  <th className="p-2 w-16 gulzartext">SR #</th>
+                  <th className="p-2 gulzartext">Create Writer - شاعر کا نام</th>
+                  <th className="p-2 gulzartext">Writer Year - شاعری کی صدی</th>
+                  <th className="p-2 gulzartext">Created On</th>
+                  <th className="p-2 gulzartext">Action</th>
                 </tr>
               </thead>
               <tbody>
                 {writers.map((writer) => (
                   <tr key={writer.id} className="border-t">
                     <td className="p-2">{writer.id}</td>
-                    <td className="p-2 text-right">{writer.name}</td>
+                    <td className="p-2 text-right gulzartext">{writer.name}</td>
                     <td className="p-2">{writer.year}</td>
                     <td className="p-2">10 May 2025 - 11:12 pm</td>
                     <td className="p-2">

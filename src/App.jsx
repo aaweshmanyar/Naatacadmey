@@ -7,6 +7,8 @@ import CreateArticle from './Component/createarticle'
 import { StyleCreator } from './Component/Style'
 import {CreateLyrics} from './Component/CreateLyrics'
 import CreateWriter from './Component/Createwriter'
+import Createtopic from './Component/Createtopic'
+import CreateTextBook from './Component/CreateTextbook'
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/style" element={<StyleCreator />} />
         <Route path="/id" element={<CreateLyrics />} />
         <Route path="/writer" element={<CreateWriter />} />
+        <Route path="/topic" element={<Createtopic />} />
+        <Route path="/books" element={<CreateTextBook />} />
       </Routes>
     </BrowserRouter>
   )

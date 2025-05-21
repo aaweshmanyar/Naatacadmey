@@ -14,7 +14,7 @@ export default function Layout({ children }) {
     { path: "/dashboard", icon: <FileText />, text: "Dashboard", arabicText: "لوحة" },
     { path: "/post", icon: <File />, text: "Posts", arabicText: "منشورات" },
     { path: "/style", icon: <Star />, text: "Styles", arabicText: "أنماط" },
-    { path: "/topics", icon: <Info />, text: "Topics", arabicText: "مقالات" },
+    { path: "/topic", icon: <Info />, text: "Topics", arabicText: "مقالات" },
     { path: "/writer", icon: <Pencil />, text: "Writers", arabicText: "شعراء أكرام" },
     { path: "/article", icon: <FileText />, text: "Articles", arabicText: "مقالين" },
     { path: "/books", icon: <Book />, text: "Books", arabicText: "کتاب" },
